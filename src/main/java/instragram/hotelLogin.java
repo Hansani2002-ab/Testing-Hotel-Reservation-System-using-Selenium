@@ -9,11 +9,11 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.time.Duration;
 
-public class instagramLogintoHomepage {
+public class hotelLogin {
 
     public static void main(String[] args) {
         // Set path to ChromeDriver
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\ASUS\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Drivers\\chromedriver.exe");
 
         // Chrome options
         ChromeOptions options = new ChromeOptions();
@@ -25,12 +25,12 @@ public class instagramLogintoHomepage {
         WebDriver driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().window().maximize();
-        driver.get("https://www.instagram.com/");
+        driver.get("https://adactinhotelapp.com/");
 
         try {
             // Login
-            driver.findElement(By.name("username")).sendKeys("hansani4040");
-            driver.findElement(By.name("password")).sendKeys("hansi@2002" + Keys.ENTER);
+            driver.findElement(By.name("username")).sendKeys("Hansani123");
+            driver.findElement(By.name("password")).sendKeys("D2OUS2" + Keys.ENTER);
             Thread.sleep(8000);
 
             // Check login failure
